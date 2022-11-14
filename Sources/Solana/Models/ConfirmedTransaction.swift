@@ -24,32 +24,32 @@ public extension ConfirmedTransactionFromBlock {
     }
 }
 public struct ParsedInstruction: Decodable {
-    struct Parsed: Decodable {
-        struct Info: Decodable {
-            let owner: String?
-            let account: String?
-            let source: String?
-            let destination: String?
+    public struct Parsed: Decodable {
+        public struct Info: Decodable {
+            public let owner: String?
+            public let account: String?
+            public let source: String?
+            public let destination: String?
 
             // create account
-            let lamports: UInt64?
-            let newAccount: String?
-            let space: UInt64?
+            public let lamports: UInt64?
+            public let newAccount: String?
+            public let space: UInt64?
 
             // initialize account
-            let mint: String?
-            let rentSysvar: String?
+            public let mint: String?
+            public let rentSysvar: String?
 
             // approve
-            let amount: String?
+            public let amount: String?
             // swiftlint:disable all
-            var delegate: String?
+            public var delegate: String?
             
             // transfer
-            let authority: String?
+            public let authority: String?
             
             // transferChecked
-            let tokenAmount: TokenAccountBalance?
+            public let tokenAmount: TokenAccountBalance?
         }
         let info: Info
         let type: String?
@@ -57,7 +57,7 @@ public struct ParsedInstruction: Decodable {
     
     let program: String?
     let programId: String?
-    let parsed: Parsed?
+    public let parsed: Parsed?
     
     // swap
     public let data: String?
