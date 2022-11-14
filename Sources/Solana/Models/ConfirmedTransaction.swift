@@ -51,7 +51,7 @@ public struct ParsedInstruction: Decodable {
             // transferChecked
             public let tokenAmount: TokenAccountBalance?
         }
-        let info: Info
+        public let info: Info
         let type: String?
     }
     
