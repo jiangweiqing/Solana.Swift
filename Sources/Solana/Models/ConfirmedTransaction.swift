@@ -53,7 +53,8 @@ public struct ParsedInstruction: Decodable {
         }
         ///
         public let info: Info
-        let type: String?
+        /// transfer create
+        public let type: String?
     }
     
     let program: String?
